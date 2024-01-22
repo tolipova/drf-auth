@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import NewsCategory, News
+from .models import  News
 
 class NewsSerializers(serializers.ModelSerializer):
     class Meta:

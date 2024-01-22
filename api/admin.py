@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import NewsCategory, News
+from .models import  News
 # Register your models here.
-admin.site.register(NewsCategory)
 admin.site.register(News)
