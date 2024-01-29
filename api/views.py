@@ -22,3 +22,26 @@ class NewsListCreateViewApi(generics.ListCreateAPIView):
 class NewsUpdateOrDeleteViewApi(generics.RetrieveUpdateDestroyAPIView):
     queryset = News.objects.all()
     serializer_class = NewsSerializers
+
+class NewsListView(generics.ListAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializers
+    
+class NewsDetailApi(generics.RetrieveAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializers
+    
+class NewsCreateView(generics.CreateAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializers
+
+class NewsUpdateApi(generics.UpdateAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializers
+
+class NewsDeleteApi(generics.DestroyAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializers
+
+
+   

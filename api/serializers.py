@@ -9,10 +9,10 @@ class NewsSerializers(serializers.ModelSerializer):
         fields = ('id', 'category', 'title', 'description', 'author', 'heshtag')
     
     def validation(self, data):
-        category = data.get(category, None)
+        # category = data.get(category, None)
         title = data.get(title, None)
-        author = data.get(author, None)
-        heshtag = data.get(heshtag, None)
+        # author = data.get(author, None)
+        # heshtag = data.get(heshtag, None)
     
         if title.isalpha():
             raise ValidationError(
